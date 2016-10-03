@@ -15,6 +15,7 @@
 		DA52B8851DA2E493009C0045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA52B8831DA2E493009C0045 /* LaunchScreen.storyboard */; };
 		DA52B88E1DA2E551009C0045 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA52B88D1DA2E551009C0045 /* MapKit.framework */; };
 		DA52B8901DA2E91D009C0045 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA52B88F1DA2E91D009C0045 /* CoreLocation.framework */; };
+		DA52B8981DA2F707009C0045 /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = DA52B8971DA2F707009C0045 /* MapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		DA52B8861DA2E493009C0045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA52B88D1DA2E551009C0045 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DA52B88F1DA2E91D009C0045 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DA52B8971DA2F707009C0045 /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
+		DA52B89A1DA2F738009C0045 /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				DA52B8791DA2E493009C0045 /* AppDelegate.m */,
 				DA52B87B1DA2E493009C0045 /* ViewController.h */,
 				DA52B87C1DA2E493009C0045 /* ViewController.m */,
+				DA52B89A1DA2F738009C0045 /* MapPoint.h */,
+				DA52B8971DA2F707009C0045 /* MapPoint.m */,
 				DA52B87E1DA2E493009C0045 /* Main.storyboard */,
 				DA52B8811DA2E493009C0045 /* Assets.xcassets */,
 				DA52B8831DA2E493009C0045 /* LaunchScreen.storyboard */,
@@ -167,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA52B87D1DA2E493009C0045 /* ViewController.m in Sources */,
+				DA52B8981DA2F707009C0045 /* MapPoint.m in Sources */,
 				DA52B87A1DA2E493009C0045 /* AppDelegate.m in Sources */,
 				DA52B8771DA2E493009C0045 /* main.m in Sources */,
 			);
