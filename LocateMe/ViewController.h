@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CLLocationManagerDelegate>
 
+@property (weak, nonatomic) IBOutlet MKMapView *worldView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (weak, nonatomic) IBOutlet UITextField *locationTitleField;
 
 @end
 
