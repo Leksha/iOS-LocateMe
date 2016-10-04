@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LocateMe/ViewController.m"
-            timestampString = "497285656.347897"
+            timestampString = "497286762.955292"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "-mapView:didUpdateUserLocation:"
             landmarkType = "7">
          </BreakpointContent>

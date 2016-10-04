@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
+#import "MapPoint.h"
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UITextFieldDelegate>
 {
@@ -19,8 +20,8 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (weak, nonatomic) IBOutlet UITextField *locationTitleField;
 
-//- (void)findLocation;
-//- (void)foundLocation:(CLLocation *)loc;
+- (void)findLocation;
+- (void)foundLocation:(CLLocation *)loc;
 
 @end
 
