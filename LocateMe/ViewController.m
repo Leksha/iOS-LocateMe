@@ -17,8 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    locationManager = [[CLLocationManager alloc] init];
+    [locationManager setDelegate:self];
+    [locationManager setDistanceFilter:kCLDistanceFilterNone];
+    [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+    [locationManager requestAlwaysAuthorization];
+    
     [_worldView setDelegate:self];
     [_worldView setShowsUserLocation:YES];
+    
+    [_locationTitleField setDelegate:self];
+    
 //    [_worldView setUserTrackingMode:MKUserTrackingModeFollowWithHeading animated:YES];
 }
 
@@ -35,5 +44,13 @@
     [_worldView setRegion:region animated:YES];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    // This method isn't implemented yet - but will son
+//    [self findLocation];
+    
+    [textField resignFirstResponder];
+    return YES;
+}
 
 @end
