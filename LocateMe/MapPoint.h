@@ -17,6 +17,7 @@
 {
     NSString *title;
     CLLocationCoordinate2D coordinate;
+    NSDate *dateCreated;
 }
 
 // A new designated initializer for instances of MapPoint
@@ -27,6 +28,8 @@
 
 // This is an optional property from MKAnnotation
 @property (nonatomic, copy) NSString *title;
+
+@property (nonatomic, copy) NSDate *dateCreated;
 
 @end
 #endif /* MapPoint_h */

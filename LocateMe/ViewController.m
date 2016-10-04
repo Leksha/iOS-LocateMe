@@ -50,6 +50,11 @@
     // Create an instance of MapPoint with the current data
     MapPoint *mp = [[MapPoint alloc] initWithCoordinate:coord title:[_locationTitleField text]];
     
+    // Set the date this coordinate was added
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSLog(@"Date: %@",[dateFormatter stringFromDate:[mp dateCreated]]);
+    
     // Add it to the map view
     [_worldView addAnnotation:mp];
     

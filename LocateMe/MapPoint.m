@@ -11,7 +11,7 @@
 
 @implementation MapPoint
 
-@synthesize coordinate, title;
+@synthesize coordinate, title, dateCreated;
 
 - (id)initWithCoordinate:(CLLocationCoordinate2D)c title:(NSString *)t
 {
@@ -19,6 +19,7 @@
     if (self){
         coordinate = c;
         [self setTitle:t];
+        dateCreated = [NSDate date];
     }
     return self;
 }
